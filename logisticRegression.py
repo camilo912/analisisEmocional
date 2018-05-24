@@ -173,6 +173,8 @@
 from pyspark import SparkConf, SparkContext
 from pyspark.mllib.regression import LabeledPoint
 from pyspark.mllib.classification import LogisticRegressionWithLBFGS
+from nltk.stem import PorterStemmer
+from nltk.tokenize import sent_tokenize, word_tokenize
 from numpy import array
 from time import time
 import re
@@ -180,17 +182,20 @@ import re
 conf = SparkConf().setAppName('example_app').setMaster('local[8]')
 sc = SparkContext(conf=conf)
 
-data_file = "datasets/trainAirlines.csv"
+# data_file = "datasets/trainAirlines.csv"
+data_file = "trainAirlines.csv"
 raw_data = sc.textFile(data_file)
 header = raw_data.first()
 raw_data = raw_data.filter(lambda x:x != header)
 
-test_data_file =  "datasets/testAirlines.csv"
+# test_data_file =  "datasets/testAirlines.csv"
+test_data_file =  "testAirlines.csv"
 test_raw_data = sc.textFile(test_data_file)
 test_header = test_raw_data.first()
 test_raw_data = test_raw_data.filter(lambda x:x != test_header)
 
-stop_words = sc.textFile("datasets/stopWordsEN.txt").take(994)
+# stop_words = sc.textFile("datasets/stopWordsEN.txt").take(994)
+stop_words = sc.textFile("stopWordsEN.txt").take(994)
 marks = "!@#$?/.;:()[]\{\},&%¡¿°|¬^~_\""
 
 def removeMarks(comment):
@@ -200,7 +205,13 @@ def removeMarks(comment):
             sol += i
     return sol
 
-
+def stemming(comment):
+    ps = PorterStemmer()
+    sol = ""
+    comment = comment.split(" ")
+    for w in comment:
+        sol += ps.stem(w) + " "
+    return sol[:-1]
 
 def removeStopWords(comment):
     list = comment.split(" ")
@@ -218,7 +229,10 @@ def parse_interaction(line):
         line_split[8] = 0.0
     line_split[9] = line_split[9].lower()
     line_split[9] = removeMarks(line_split[9])#re.sub('[!@#$?/.;:()[]\{\},&%¡¿°|¬^~_]', '', line_split[9])
-    print(removeStopWords(line_split[9]))
+    line_split[9] = removeStopWords(line_split[9])
+    #print(removeStopWords(line_split[9]))
+    line_split[9] = stemming(line_split[9])
+    print(line_split[9])
     clean_line_split = []
     clean_line_split.append(line_split[5])
     #clean_line_split.append(line_split[7])
