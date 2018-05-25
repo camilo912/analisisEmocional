@@ -44,7 +44,7 @@ Debido a que la técnica de análisis de sentimientos requiere de un modelo supe
 
 En primera instacia se aprovecho el preprocesamiento que se había realizado en la etapa previa, buscando que el output de este preprocesamiento fuera únicamente los datos importantes para el modelo, asi que se organizo esta data siendo principalmente el vector final de palabras que generaba el modelo previamente, además se tenía el dato final que era la emoción, la cual podía caber en 3 categorías (sad, normal, happy --> 0, 1, 2), buscando que cada id estuviera clasificado y tuviera su respectivo label, para realizar un modelo supervisado. También se separo la data en 2 archivos diferentes, un train.csv y un test.csv, buscando que fuera respectivamente el archivo de entrenamiento y el archivo de test del modelo.
 
-Los archivos necesarios fueron fuardados en HDFS, para poder permitir el procesamiento desde el DCA con spark, una vez estaban guardados los archivos en HDFS, se aseguraba el acceso desde el DCA, por lo que se realizo el modelo, el modelo realizado fue un LogisticRegressionWithLBFGS en pyspark, el cual leia el archivo de training para entrenar, separaba la información en su respectivo Label y  features, y se entrenaba el modelo con estos datos, una vez entrenado se accedia al segundo archivo, el de test, con el cual se verificaban los resultados de este y se guardaban en un archivo, con formato de (resultado real, predicción), para poder manejar estos datos, y que se pueda realizar análitica sobre estos en el subsistema de Visualización.
+Los archivos necesarios fueron guardados en HDFS, para poder permitir el procesamiento desde el DCA con spark, una vez estaban guardados los archivos en HDFS, se aseguraba el acceso desde el DCA, por lo que se realizo el modelo, el modelo realizado fue un LogisticRegressionWithLBFGS en pyspark, el cual leia el archivo de training para entrenar, separaba la información en su respectivo Label y  features, y se entrenaba el modelo con estos datos, una vez entrenado se accedia al segundo archivo, el de test, con el cual se verificaban los resultados de este y se guardaban en un archivo, con formato de (resultado real, predicción), para poder manejar estos datos, y que se pueda realizar análitica sobre estos en el subsistema de Visualización.
 
 # Visualización:
 
@@ -56,9 +56,19 @@ desde allí puede realizar los siguientes comando para obtener la visualización
 
   - MATCH (n)-[r]->(m) RETURN n, r, m;  -> Mostrar los datos en un grafo
   
-  - MATCH (conclusion:Conclusion), (rating:Rating) , (prediction:Prediction) RETURN rating.name,prediction.name, conclusion.name LIMIT 992-> Mostrar todos los datos en una tabla
+    ![query1](/images/Query1.png)
   
-  - MATCH (conclusion:Conclusion {name:'Bueno'}), (rating:Rating) , (prediction:Prediction) RETURN rating.name,prediction.name,conclusion.name LIMIT 992-> Mostrar todos los datos en donde la conclusión fue Bueno.
+  - MATCH (n)-[r]->(m)-[q]->(f) RETURN n.name, m.name, f.name; Mostrar todos los datos en una tabla
+  
+    ![query2](/images/Query2.png)
+  
+  - MATCH (n)-[r]->(m)-[q]->(f) where f.name in ['Existe correlacion'] RETURN n.name, m.name, f.name;-> Mostrar todos los datos en donde existe correlación.
+  
+    ![query3](/images/Query3)
+  
+    
+    Como se puede observar, en el último query aparecen todos los registros en donde existe una correlación entre el rating y la predicción del modelo. En total hay 126 registros que representa el 63.36% de aciertos. 
+  
 
 
 # Marco teórico: 
