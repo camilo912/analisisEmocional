@@ -9,7 +9,7 @@ time.sleep(20)
 
 db = GraphDatabase("http://localhost:7474", username="neo4j", password="2178026")
 
-archivo = open("visual.csv","r")
+archivo = open("./output/finalOutput.csv","r")
 lineas = archivo.readlines()
 rating = []
 prediction = []
