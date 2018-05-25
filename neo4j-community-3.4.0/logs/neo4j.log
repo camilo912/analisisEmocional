@@ -1,0 +1,702 @@
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 04:41:23.036+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 04:41:23.142+0000 INFO  Starting...
+2018-05-25 04:41:29.551+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 04:41:32.450+0000 INFO  Started.
+2018-05-25 04:41:34.322+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 04:41:38.175+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-000019f0-00000001-7187ab61a89a27a0-9c9e17f3'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 04:44:06.529+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-000019f0-00000018-5f555850ee9c6b3e-e448eff1'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 04:45:06.372+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-000019f0-00000024-493f2c00a29d55bd-8146df09'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 04:46:28.903+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-000019f0-00000034-ef4582dc6a9e981d-40089c7b'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 04:46:33.748+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-000019f0-0000003a-510d301b151eab0a-0f6d1b43'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 05:11:45.608+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:11:45.648+0000 INFO  Stopping...
+2018-05-25 05:11:46.137+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:14:17.174+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:14:17.212+0000 INFO  Starting...
+2018-05-25 05:14:19.681+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:14:22.293+0000 INFO  Started.
+2018-05-25 05:14:24.155+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:14:48.815+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-00003798-00000001-ffd10a0e44f8873e-fb65e49b'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 05:15:27.383+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:15:27.394+0000 INFO  Stopping...
+2018-05-25 05:15:27.664+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:15:29.181+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:15:29.275+0000 INFO  Starting...
+2018-05-25 05:15:32.073+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:15:35.214+0000 INFO  Started.
+2018-05-25 05:15:37.183+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:16:06.526+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:16:06.541+0000 INFO  Stopping...
+2018-05-25 05:16:06.831+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:16:08.429+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:16:08.458+0000 INFO  Starting...
+2018-05-25 05:16:11.108+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:16:13.913+0000 INFO  Started.
+2018-05-25 05:16:15.313+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:16:19.948+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:16:19.982+0000 INFO  Stopping...
+2018-05-25 05:16:20.381+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:16:21.712+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:16:21.750+0000 INFO  Starting...
+2018-05-25 05:16:24.182+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:16:27.043+0000 INFO  Started.
+2018-05-25 05:16:28.557+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:16:49.099+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-00003c17-00000005-1b0697f070fa5e39-8a09487c'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 05:17:14.694+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:17:14.708+0000 INFO  Stopping...
+2018-05-25 05:17:15.202+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:17:16.514+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:17:16.548+0000 INFO  Starting...
+2018-05-25 05:17:19.006+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:17:21.801+0000 INFO  Started.
+2018-05-25 05:17:23.090+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:17:53.323+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-00003db9-00000007-bf2cf8def8fb591c-faf993f9'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 05:18:25.658+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:18:25.689+0000 INFO  Stopping...
+2018-05-25 05:18:25.975+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:18:27.428+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:18:27.455+0000 INFO  Starting...
+2018-05-25 05:18:29.669+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:18:32.325+0000 INFO  Started.
+2018-05-25 05:18:33.551+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:24:34.480+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:24:34.492+0000 INFO  Stopping...
+2018-05-25 05:24:34.815+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:24:36.310+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:24:36.345+0000 INFO  Starting...
+2018-05-25 05:24:39.036+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:24:41.934+0000 INFO  Started.
+2018-05-25 05:24:43.485+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:24:58.542+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:24:58.555+0000 INFO  Stopping...
+2018-05-25 05:24:58.825+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:25:00.572+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:25:00.616+0000 INFO  Starting...
+2018-05-25 05:25:03.721+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:25:06.420+0000 INFO  Started.
+2018-05-25 05:25:07.888+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:26:13.764+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:26:13.775+0000 INFO  Stopping...
+2018-05-25 05:26:14.163+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:26:15.615+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:26:15.649+0000 INFO  Starting...
+2018-05-25 05:26:19.605+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:26:22.261+0000 INFO  Started.
+2018-05-25 05:26:24.364+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:26:36.997+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:26:37.010+0000 INFO  Stopping...
+2018-05-25 05:26:37.307+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:26:38.816+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:26:38.850+0000 INFO  Starting...
+2018-05-25 05:26:42.618+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:26:45.635+0000 INFO  Started.
+2018-05-25 05:26:47.759+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:26:56.065+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-000049af-00000004-7f5952bb3903a135-8b70c576'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 05:27:27.940+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:27:27.957+0000 INFO  Stopping...
+2018-05-25 05:27:28.229+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:27:29.819+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:27:29.852+0000 INFO  Starting...
+2018-05-25 05:27:33.251+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:27:36.115+0000 INFO  Started.
+2018-05-25 05:27:38.561+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:27:41.125+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-00004b51-00000004-1ca390fa69045139-ddd6770c'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 05:27:50.742+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:27:50.759+0000 INFO  Stopping...
+2018-05-25 05:27:51.064+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:27:52.511+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:27:52.549+0000 INFO  Starting...
+2018-05-25 05:27:56.021+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:27:58.456+0000 INFO  Started.
+2018-05-25 05:27:59.935+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:28:07.974+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-00004c89-00000004-252bdcf83704ba18-cff7f3f0'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 05:31:03.226+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:31:03.238+0000 INFO  Stopping...
+2018-05-25 05:31:03.998+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:31:05.994+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:31:06.033+0000 INFO  Starting...
+2018-05-25 05:31:09.663+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:31:12.131+0000 INFO  Started.
+2018-05-25 05:31:13.637+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:31:22.144+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-00005047-00000006-54f30f935b07b096-fc92cdf3'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 05:52:15.675+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:52:15.695+0000 INFO  Stopping...
+2018-05-25 05:52:16.341+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:52:17.455+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:52:17.489+0000 INFO  Starting...
+2018-05-25 05:52:20.893+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:52:23.664+0000 INFO  Started.
+2018-05-25 05:52:25.546+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:52:38.728+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-000063f5-00000004-3252d7f1acfb2b38-8fc0e787'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 05:54:19.505+0000 ERROR The RuntimeException could not be mapped to a response, re-throwing to the HTTP container org.neo4j.internal.kernel.api.exceptions.schema.IllegalTokenNameException: '' is not a valid token name. Only non-null, non-empty strings are allowed.
+java.lang.IllegalArgumentException: org.neo4j.internal.kernel.api.exceptions.schema.IllegalTokenNameException: '' is not a valid token name. Only non-null, non-empty strings are allowed.
+	at org.neo4j.kernel.impl.core.NodeProxy.createRelationshipTo(NodeProxy.java:554)
+	at org.neo4j.server.rest.web.DatabaseActions.createRelationship(DatabaseActions.java:546)
+	at org.neo4j.server.rest.web.RestfulGraphDatabase.createRelationship(RestfulGraphDatabase.java:578)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+	at org.neo4j.server.rest.transactional.TransactionalRequestDispatcher.dispatch(TransactionalRequestDispatcher.java:147)
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:558)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:733)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1650)
+	at org.neo4j.server.rest.dbms.AuthorizationEnabledFilter.doFilter(AuthorizationEnabledFilter.java:123)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.neo4j.server.rest.web.CorsFilter.doFilter(CorsFilter.java:93)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.neo4j.server.rest.web.CollectUserAgentFilter.doFilter(CollectUserAgentFilter.java:69)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:61)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.neo4j.internal.kernel.api.exceptions.schema.IllegalTokenNameException: '' is not a valid token name. Only non-null, non-empty strings are allowed.
+	at org.neo4j.kernel.impl.newapi.KernelToken.checkValidTokenName(KernelToken.java:200)
+	at org.neo4j.kernel.impl.newapi.KernelToken.relationshipTypeGetOrCreateForName(KernelToken.java:99)
+	at org.neo4j.kernel.impl.core.NodeProxy.createRelationshipTo(NodeProxy.java:547)
+	... 57 more
+2018-05-25 05:54:19.507+0000 WARN  /db/data/node/0/relationships org.neo4j.internal.kernel.api.exceptions.schema.IllegalTokenNameException: '' is not a valid token name. Only non-null, non-empty strings are allowed.
+java.lang.IllegalArgumentException: org.neo4j.internal.kernel.api.exceptions.schema.IllegalTokenNameException: '' is not a valid token name. Only non-null, non-empty strings are allowed.
+	at org.neo4j.kernel.impl.core.NodeProxy.createRelationshipTo(NodeProxy.java:554)
+	at org.neo4j.server.rest.web.DatabaseActions.createRelationship(DatabaseActions.java:546)
+	at org.neo4j.server.rest.web.RestfulGraphDatabase.createRelationship(RestfulGraphDatabase.java:578)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+	at org.neo4j.server.rest.transactional.TransactionalRequestDispatcher.dispatch(TransactionalRequestDispatcher.java:147)
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:558)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:733)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1650)
+	at org.neo4j.server.rest.dbms.AuthorizationEnabledFilter.doFilter(AuthorizationEnabledFilter.java:123)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.neo4j.server.rest.web.CorsFilter.doFilter(CorsFilter.java:93)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.neo4j.server.rest.web.CollectUserAgentFilter.doFilter(CollectUserAgentFilter.java:69)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:61)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.neo4j.internal.kernel.api.exceptions.schema.IllegalTokenNameException: '' is not a valid token name. Only non-null, non-empty strings are allowed.
+	at org.neo4j.kernel.impl.newapi.KernelToken.checkValidTokenName(KernelToken.java:200)
+	at org.neo4j.kernel.impl.newapi.KernelToken.relationshipTypeGetOrCreateForName(KernelToken.java:99)
+	at org.neo4j.kernel.impl.core.NodeProxy.createRelationshipTo(NodeProxy.java:547)
+	... 57 more
+2018-05-25 05:56:44.404+0000 ERROR The RuntimeException could not be mapped to a response, re-throwing to the HTTP container org.neo4j.internal.kernel.api.exceptions.schema.IllegalTokenNameException: '' is not a valid token name. Only non-null, non-empty strings are allowed.
+java.lang.IllegalArgumentException: org.neo4j.internal.kernel.api.exceptions.schema.IllegalTokenNameException: '' is not a valid token name. Only non-null, non-empty strings are allowed.
+	at org.neo4j.kernel.impl.core.NodeProxy.createRelationshipTo(NodeProxy.java:554)
+	at org.neo4j.server.rest.web.DatabaseActions.createRelationship(DatabaseActions.java:546)
+	at org.neo4j.server.rest.web.RestfulGraphDatabase.createRelationship(RestfulGraphDatabase.java:578)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+	at org.neo4j.server.rest.transactional.TransactionalRequestDispatcher.dispatch(TransactionalRequestDispatcher.java:147)
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:558)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:733)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1650)
+	at org.neo4j.server.rest.dbms.AuthorizationEnabledFilter.doFilter(AuthorizationEnabledFilter.java:123)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.neo4j.server.rest.web.CorsFilter.doFilter(CorsFilter.java:93)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.neo4j.server.rest.web.CollectUserAgentFilter.doFilter(CollectUserAgentFilter.java:69)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:61)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.neo4j.internal.kernel.api.exceptions.schema.IllegalTokenNameException: '' is not a valid token name. Only non-null, non-empty strings are allowed.
+	at org.neo4j.kernel.impl.newapi.KernelToken.checkValidTokenName(KernelToken.java:200)
+	at org.neo4j.kernel.impl.newapi.KernelToken.relationshipTypeGetOrCreateForName(KernelToken.java:99)
+	at org.neo4j.kernel.impl.core.NodeProxy.createRelationshipTo(NodeProxy.java:547)
+	... 57 more
+2018-05-25 05:56:44.405+0000 WARN  /db/data/node/20/relationships org.neo4j.internal.kernel.api.exceptions.schema.IllegalTokenNameException: '' is not a valid token name. Only non-null, non-empty strings are allowed.
+java.lang.IllegalArgumentException: org.neo4j.internal.kernel.api.exceptions.schema.IllegalTokenNameException: '' is not a valid token name. Only non-null, non-empty strings are allowed.
+	at org.neo4j.kernel.impl.core.NodeProxy.createRelationshipTo(NodeProxy.java:554)
+	at org.neo4j.server.rest.web.DatabaseActions.createRelationship(DatabaseActions.java:546)
+	at org.neo4j.server.rest.web.RestfulGraphDatabase.createRelationship(RestfulGraphDatabase.java:578)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+	at org.neo4j.server.rest.transactional.TransactionalRequestDispatcher.dispatch(TransactionalRequestDispatcher.java:147)
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:409)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:558)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:733)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1650)
+	at org.neo4j.server.rest.dbms.AuthorizationEnabledFilter.doFilter(AuthorizationEnabledFilter.java:123)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.neo4j.server.rest.web.CorsFilter.doFilter(CorsFilter.java:93)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.neo4j.server.rest.web.CollectUserAgentFilter.doFilter(CollectUserAgentFilter.java:69)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:61)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:530)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.neo4j.internal.kernel.api.exceptions.schema.IllegalTokenNameException: '' is not a valid token name. Only non-null, non-empty strings are allowed.
+	at org.neo4j.kernel.impl.newapi.KernelToken.checkValidTokenName(KernelToken.java:200)
+	at org.neo4j.kernel.impl.newapi.KernelToken.relationshipTypeGetOrCreateForName(KernelToken.java:99)
+	at org.neo4j.kernel.impl.core.NodeProxy.createRelationshipTo(NodeProxy.java:547)
+	... 57 more
+2018-05-25 05:58:01.904+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:58:01.918+0000 INFO  Stopping...
+2018-05-25 05:58:02.474+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:58:04.024+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:58:04.075+0000 INFO  Starting...
+2018-05-25 05:58:08.758+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:58:13.605+0000 INFO  Started.
+2018-05-25 05:58:16.453+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:58:38.360+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:58:38.386+0000 INFO  Stopping...
+2018-05-25 05:58:38.708+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:58:40.432+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:58:40.487+0000 INFO  Starting...
+2018-05-25 05:58:45.043+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:58:48.838+0000 INFO  Started.
+2018-05-25 05:58:51.836+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:59:01.870+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 05:59:01.894+0000 INFO  Stopping...
+2018-05-25 05:59:02.197+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 05:59:04.049+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 05:59:04.101+0000 INFO  Starting...
+2018-05-25 05:59:08.761+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 05:59:13.485+0000 INFO  Started.
+2018-05-25 05:59:16.285+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 05:59:29.449+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-00006e0b-00000004-c701a5344ac16f97-a49021e6'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 06:00:27.182+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 06:00:27.203+0000 INFO  Stopping...
+2018-05-25 06:00:27.859+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 06:00:30.802+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 06:00:30.879+0000 INFO  Starting...
+2018-05-25 06:00:35.388+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 06:00:39.648+0000 INFO  Started.
+2018-05-25 06:00:43.220+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 06:00:54.979+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-00007017-00000006-829f23486542bdb3-983365cd'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 06:48:10.341+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 06:48:10.359+0000 INFO  Stopping...
+2018-05-25 06:48:10.706+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 06:48:12.776+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 06:48:12.862+0000 INFO  Starting...
+2018-05-25 06:48:18.860+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 06:48:23.607+0000 INFO  Started.
+2018-05-25 06:48:28.308+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 06:48:38.300+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 06:48:38.335+0000 INFO  Stopping...
+2018-05-25 06:48:38.670+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 06:48:40.722+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 06:48:40.805+0000 INFO  Starting...
+2018-05-25 06:48:46.375+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 06:48:51.516+0000 INFO  Started.
+2018-05-25 06:48:55.752+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 06:49:14.775+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-00001d33-00000008-439897dcdbeefd04-e35f4f9c'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
