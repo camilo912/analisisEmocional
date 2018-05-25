@@ -232,7 +232,7 @@ def parse_interaction(line):
     line_split[9] = removeStopWords(line_split[9])
     #print(removeStopWords(line_split[9]))
     line_split[9] = stemming(line_split[9])
-    print(line_split[9])
+    # print(line_split[9])
     clean_line_split = []
     clean_line_split.append(line_split[5])
     #clean_line_split.append(line_split[7])
@@ -243,6 +243,17 @@ def parse_interaction(line):
          feeling = 2.0
     return LabeledPoint(feeling, array([float(x) for x in clean_line_split]))
 
+def get_similarity(preds, stars):
+    labels = []
+    for i in preds:
+        labels.append(i[1])
+    cont = 0
+    for i in range(len(labels)):
+        if((labels[i] == 0 and stars[i] < 4) or (labels[i] == 1 and stars[i] < 8 and stars[i] > 3) or (labels[i] == 2 and stars[i] > 7)):
+            cont += 1
+    return float(cont/len(labels))
+
+
 training_data = raw_data.map(parse_interaction)
 test_data = test_raw_data.map(parse_interaction)
 #print(training_data.take(1))
@@ -252,6 +263,7 @@ logit_model = LogisticRegressionWithLBFGS.train(training_data, numClasses=3)
 tt = time() - t0
 
 labels_and_preds = test_data.map(lambda p: (p.label, logit_model.predict(p.features)))
+#print(labels_and_preds.take(10), "************ aca ***************")
 
 t0 = time()
 test_accuracy = labels_and_preds.filter(lambda v: v[0] == v[1]).count() / float(test_data.count())
@@ -259,6 +271,12 @@ test_accuracy = labels_and_preds.filter(lambda v: v[0] == v[1]).count() / float(
 tt = time() - t0
 
 print("Prediction made in {} seconds. Test accuracy is {}".format(round(tt,3), round(test_accuracy,4)))
+
+similarity = get_similarity(labels_and_preds.take(199), [int(x.split(",")[5]) for x in test_raw_data.take(199)])
+
+print("Percentage of similarity of stars and predictions is {}".format(round(similarity, 4)))
+
+
 
 # ################ implementación septima ##############
 # from pyspark.ml.classification import LogisticRegression
