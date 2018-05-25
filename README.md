@@ -22,7 +22,17 @@ El conjunto de datos que se utilizará pertenecen al siguiente archivo: airlines
 El archivo de datos que se utiliza para realizar el proceso contiene la siguiente información:
 id,aerolínea,Fecha,Localización,rating,cabina,valor,recomendaciones,revisión.
 
-Este archivo se carga en el HDFS. 
+Este archivo se carga en el HDFS.
+
+
+Se asume el csv inicial está en la misma carpeta que getTrain.py y el getTest.py
+```
+python getTrain.py > traindata.csv
+python getTest.py > testdata.csv
+```
+Todo esto genera los csv que se le van a entregar a Spark.
+
+Luego se cargan estos dos archivos a HDFS.
 
 Luego, para este conjunto de datos se hace un proceso de limpieza o cleaning solo a la revisión o comentario que consiste en:
 
@@ -46,11 +56,37 @@ En primera instacia se aprovecho el preprocesamiento que se había realizado en 
 
 Los archivos necesarios fueron guardados en HDFS, para poder permitir el procesamiento desde el DCA con spark, una vez estaban guardados los archivos en HDFS, se aseguraba el acceso desde el DCA, por lo que se realizo el modelo, el modelo realizado fue un LogisticRegressionWithLBFGS en pyspark, el cual leia el archivo de training para entrenar, separaba la información en su respectivo Label y  features, y se entrenaba el modelo con estos datos, una vez entrenado se accedia al segundo archivo, el de test, con el cual se verificaban los resultados de este y se guardaban en un archivo, con formato de (resultado real, predicción), para poder manejar estos datos, y que se pueda realizar análitica sobre estos en el subsistema de Visualización.
 
+Para continuar con el procedimiento de uso se conecta con el DCA, y se lleva el archivo modelSpark.py para allá.
+```
+pyspark modelSpark.py
+```
+Esto creará un nuevo archivo en el HDFS que tendrá el Output del modelo. Este Output se trae localmente a la misma carpeta donde esté cuteOutput.py.
+
+```
+python cuteOutput.py > finalOutput.csv
+```
+Esto genera un nuevo archivo csv que se utilizará para la visualización.
+
 # Visualización:
 
 Para el proceso de visualización se está utilizando neo4j.
 
-El usuario puede acceder al servidor de neo4j por medio del localhost:7474.
+Para correr el neo4j se debe hacer:
+
+Instalar el cliente de neo4j:
+
+
+```
+sudo pip install neo4jrestclient
+```
+
+Correr el siguiente programa para cargar los datos del csv al neo4j:
+
+```
+python display.py
+```
+
+Ahora, el usuario puede acceder al servidor de neo4j por medio del localhost:7474.
 
 desde allí puede realizar los siguientes comando para obtener la visualización de los datos y la información:
 
@@ -109,6 +145,9 @@ En base a esto, se asigna sentimiento a cada token individual, para, en la fase 
 
 # Webgrafía (Código de Honor):
 
-https://www.codementor.io/jadianes/spark-mllib-logistic-regression-du107neto
-https://marcobonzanini.com/2015/04/06/getting-started-with-neo4j-and-python/
-https://www.beeva.com/beeva-view/innovacion/bigdata-y-el-analisis-del-sentimiento-2/
+Codementor.io. (2018). Spark & Python: MLlib Logistic Regression | Codementor. [online] Available at: https://www.codementor.io/jadianes/spark-mllib-logistic-regression-du107neto [Accessed 24 May 2018]. (Fuente principal y de ejemplo para el código)
+
+Bonzanini, M. (2018). Getting started with Neo4j and Python. [online] Marco Bonzanini. Available at: https://marcobonzanini.com/2015/04/06/getting-started-with-neo4j-and-python/ [Accessed 25 May 2018].
+
+BEEVA | Soluciones de tecnología e innovación para empresas. (2018). BigData y el Análisis del Sentimiento - BEEVA | Soluciones de tecnología e innovación para empresas. [online] Available at: https://www.beeva.com/beeva-view/innovacion/bigdata-y-el-analisis-del-sentimiento-2/ [Accessed 25 May 2018].
+
