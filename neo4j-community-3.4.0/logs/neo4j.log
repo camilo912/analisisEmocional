@@ -759,3 +759,60 @@ org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 10:28:51.169+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-00003a3e-000000c3-d3660458e3100b5e-b440b8cb'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 10:46:10.212+0000 INFO  Neo4j Server shutdown initiated by request
+2018-05-25 10:46:12.413+0000 INFO  Stopping...
+2018-05-25 10:46:17.276+0000 INFO  Stopped.
+nohup: no se tendrá en cuenta la entrada
+2018-05-25 11:11:32.396+0000 INFO  ======== Neo4j 3.4.0 ========
+2018-05-25 11:11:32.627+0000 INFO  Starting...
+2018-05-25 11:11:39.556+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2018-05-25 11:11:44.650+0000 INFO  Started.
+2018-05-25 11:11:47.314+0000 INFO  Remote interface available at http://localhost:7474/
+2018-05-25 11:12:00.546+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-00000eaa-00000001-61a08d68eaff8cc8-83c587d6'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-25 11:55:13.687+0000 ERROR Unexpected error detected in bolt session '3010b3fffeba9401-00000eaa-000002ae-38b35845ce671f7c-f16b50d6'. The client is unauthorized due to authentication failure.
+org.neo4j.bolt.v1.runtime.BoltConnectionFatality: The client is unauthorized due to authentication failure.
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:740)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.handleFailure(BoltStateMachine.java:726)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.access$300(BoltStateMachine.java:62)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine$State$1.init(BoltStateMachine.java:434)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachine.init(BoltStateMachine.java:140)
+	at org.neo4j.bolt.v1.messaging.BoltMessageRouter.lambda$onInit$0(BoltMessageRouter.java:70)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:193)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:143)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:163)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$null$0(ExecutorBoltScheduler.java:145)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

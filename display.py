@@ -56,3 +56,6 @@ for i,j,z in zip(rating,prediction,conclusion):
 #MATCH (conclusion:Conclusion), (rating:Rating) , (prediction:Prediction) RETURN conclusion.name,prediction.name,rating.name
 #MATCH (conclusion:Conclusion {name:'Bueno'}), (rating:Rating) , (prediction:Prediction) RETURN rating.name,prediction.name,conclusion.name
 #MATCH (conclusion:Conclusion {name:'Bueno'}), (rating:Rating) , (prediction:Prediction {name:'Bueno'}) RETURN rating.name,prediction.name,conclusion.name LIMIT 10
+#MATCH(n) RETURN labels(n), keys(n),size(keys(n)), count(*) ORDER BY size(keys(n)) DESC
+#MATCH (n)-[r]->(m)-[q]->(f) RETURN n.name, m.name, f.name;
+#MATCH (n)-[r]->(m)-[q]->(f) where m.name in ['bueno'] RETURN n.name, m.name, f.name;
